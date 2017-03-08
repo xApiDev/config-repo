@@ -1,4 +1,5 @@
 iban:
+  apiProtocol: "https"
   apiDomain: "api.iban.com"
   apiPath: "/clients/api"
   apiIbanValidatorEndPoint: "ibanv2.php"
