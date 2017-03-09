@@ -1,6 +1,6 @@
 iban:
   apiProtocol: "https"
-  apiDomain: "api.iba"
+  apiDomain: "api.iban.com"
   apiPath: "/clients/api/"
   apiIbanValidatorEndPoint: "ibanv2.php"
   apikey: "8bce658c82307cd485112226edd2c91b"
