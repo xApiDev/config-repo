@@ -11,10 +11,9 @@ eureka:
   client:
     registerWithEureka: false
     fetchRegistry: false
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
   server:
     waitTimeInMsWhenSyncEmpty: 0
+    enableSelfPreservation: false
 ---
 spring:
   profiles: development
@@ -31,7 +30,6 @@ eureka:
   client:
     registerWithEureka: false
     fetchRegistry: false
-    serviceUrl:
-      defaultZone: https://discovery-server-xapi.cfapps.io/eureka/
   server:
     waitTimeInMsWhenSyncEmpty: 0
+    enableSelfPreservation: false
