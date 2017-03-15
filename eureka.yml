@@ -5,6 +5,7 @@ management:
   security:
     enabled: false
 eureka:
+  enviroment: local
   instance:
     hostname: localhost
     prefer-ip-address: true
