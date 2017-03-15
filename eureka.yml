@@ -7,7 +7,7 @@ management:
 eureka:
   instance:
     hostname: localhost
-    preferIpAddress: true
+    prefer-ip-address: true
   client:
     registerWithEureka: false
     fetchRegistry: false
@@ -26,7 +26,7 @@ management:
 eureka:
   instance:
     hostname: discovery-server-xapi.cfapps.io
-    preferIpAddress: true
+    prefer-ip-address: true
   client:
     registerWithEureka: false
     fetchRegistry: false
