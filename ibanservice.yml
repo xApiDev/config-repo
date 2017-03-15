@@ -1,3 +1,53 @@
+server:
+  port: 8080
+management:
+  port: 8081
+  security:
+    enabled: false
+endpoints:
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    leaseRenewalIntervalInSeconds: 3
+    statusPageUrlPath: /info
+    healthCheckUrlPath: /health
+    preferIpAddress: true
+iban:
+  apiProtocol: "https"
+  apiDomain: "api.iban.com"
+  apiPath: "/clients/api/"
+  apiIbanValidatorEndPoint: "ibanv2.php"
+  apikey: "8bce658c82307cd485112226edd2c91b"
+  apiFormat: "json"
+---
+spring:
+  profiles: development
+server:
+  port: 8080
+management:
+  port: 8081
+  security:
+    enabled: false
+endpoints:
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+eureka:
+  client:
+    service-url:
+      defaultZone: https://discovery-server-xapi.cfapps.io/eureka/
+  instance:
+    leaseRenewalIntervalInSeconds: 3
+    statusPageUrlPath: /info
+    healthCheckUrlPath: /health
+    preferIpAddress: true
 iban:
   apiProtocol: "https"
   apiDomain: "api.iban.com"
