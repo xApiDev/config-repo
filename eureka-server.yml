@@ -1,5 +1,9 @@
 server:
   port: 8761
+management:
+  port: 8081
+  security:
+    enabled: false
 eureka:
   instance:
     hostname: localhost
@@ -16,6 +20,10 @@ spring:
   profiles: development
 server:
   port: 8761
+management:
+  port: 8081
+  security:
+    enabled: false
 eureka:
   instance:
     hostname: discovery-server-xapi.cfapps.io
