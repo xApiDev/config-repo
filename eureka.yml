@@ -24,6 +24,7 @@ management:
   security:
     enabled: false
 eureka:
+  enviroment: development
   instance:
     hostname: discovery-server-xapi.cfapps.io
     prefer-ip-address: true
