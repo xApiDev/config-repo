@@ -6,7 +6,6 @@ management:
     enabled: false
 eureka:
   instance:
-    enviroment: local
     hostname: localhost
     prefer-ip-address: true
   client:
@@ -26,7 +25,6 @@ management:
     enabled: false
 eureka:
   instance:
-    enviroment: development
     hostname: discovery-server-xapi.cfapps.io
     prefer-ip-address: true
   client:
