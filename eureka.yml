@@ -5,8 +5,8 @@ management:
   security:
     enabled: false
 eureka:
-  enviroment: local
   instance:
+    enviroment: local
     hostname: localhost
     prefer-ip-address: true
   client:
@@ -25,8 +25,8 @@ management:
   security:
     enabled: false
 eureka:
-  enviroment: development
   instance:
+    enviroment: development
     hostname: discovery-server-xapi.cfapps.io
     prefer-ip-address: true
   client:
