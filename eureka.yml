@@ -6,32 +6,7 @@ management:
     enabled: false
 eureka:
   instance:
-    leaseRenewalIntervalInSeconds: 3
-    statusPageUrlPath: /info
-    healthCheckUrlPath: /health
     hostname: localhost
-    prefer-ip-address: true
-  client:
-    registerWithEureka: false
-    fetchRegistry: false
-  server:
-    waitTimeInMsWhenSyncEmpty: 0
-    enableSelfPreservation: false
----
-spring:
-  profiles: development
-server:
-  port: ${EUREKA_SERVER_PORT:8761}
-management:
-  port: 8082
-  security:
-    enabled: false
-eureka:
-  instance:
-    leaseRenewalIntervalInSeconds: 3
-    statusPageUrlPath: /info
-    healthCheckUrlPath: /health
-    hostname: discovery-server-xapi.cfapps.io
     prefer-ip-address: true
   client:
     registerWithEureka: false
