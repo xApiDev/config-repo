@@ -6,6 +6,9 @@ management:
     enabled: false
 eureka:
   instance:
+    leaseRenewalIntervalInSeconds: 3
+    statusPageUrlPath: /info
+    healthCheckUrlPath: /health
     hostname: localhost
     prefer-ip-address: true
   client:
@@ -25,6 +28,9 @@ management:
     enabled: false
 eureka:
   instance:
+    leaseRenewalIntervalInSeconds: 3
+    statusPageUrlPath: /info
+    healthCheckUrlPath: /health
     hostname: discovery-server-xapi.cfapps.io
     prefer-ip-address: true
   client:
