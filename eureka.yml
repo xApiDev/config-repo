@@ -1,5 +1,5 @@
 server:
-  port: ${EUREKA_SERVER_PORT:8761}
+  port: ${EUREKA_SERVER_PORT:8762}
 management:
   port: 8082
   security:
@@ -21,7 +21,7 @@ eureka:
 spring:
   profiles: development
 server:
-  port: ${EUREKA_SERVER_PORT:8761}
+  port: ${EUREKA_SERVER_PORT:8762}
 management:
   port: 8082
   security:
