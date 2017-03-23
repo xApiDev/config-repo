@@ -17,7 +17,7 @@ eureka:
     leaseRenewalIntervalInSeconds: 3
     statusPageUrlPath: /info
     healthCheckUrlPath: /health
-    prefer-ip-address: true
+    preferIpAddress: true
 iban:
   apiProtocol: "https"
   apiDomain: "api.iban.com"
@@ -47,7 +47,7 @@ eureka:
     leaseRenewalIntervalInSeconds: 3
     statusPageUrlPath: /info
     healthCheckUrlPath: /health
-    prefer-ip-address: true
+    preferIpAddress: true
 iban:
   apiProtocol: "https"
   apiDomain: "api.iban.com"
