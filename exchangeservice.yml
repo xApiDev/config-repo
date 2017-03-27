@@ -48,4 +48,4 @@ eureka:
 exchange:
   apiProtocol: "http"
   apiDomain: "api.fixer.io"
-  apiPath: "/lates
+  apiPath: "/lates"
